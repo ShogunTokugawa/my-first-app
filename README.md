@@ -1,3 +1,44 @@
+Дока по реакту официальные
+https://ru.reactjs.org/docs/getting-started.html
+
+Быстрое создание приложения create-react-app
+https://github.com/facebook/create-react-app
+
+Заметки по реакту
+https://daruse.ru/react/
+
+Задание.
+---
+1. Создать чистое реакт приложение и залить его на гихтхаб
+2. Создать компоненты 
+	header - шапка, принимает логотип (ссылка на любую картинку в инете) и название сайта
+	nav - пункты меню (штук 5 передай в виде массива [{title: 'Новости', link: '/news'}, {...}])
+	footer - копирайты и динимически вычисляемый год: @copyright все права защищены {текущий год} год.
+	
+3. Создать компонент content - и в нем вывести следующие компоненты:
+ну только попроще с версткой:
+
+* // https://bootstrap-4.ru/docs/4.3.1/components/alerts/
+принимает текст и разные цветовые стили
+
+* // https://bootstrap-4.ru/docs/4.3.1/components/buttons/
+принимает стиль и текст кнопки
+
+* // https://bootstrap-4.ru/docs/4.3.1/components/card/
+принимает ссылку на картинку и текст вместе с html-кодом
+
+* // https://bootstrap-4.ru/docs/4.3.1/components/breadcrumb/
+принимает массив такого же типа как и nav компонент
+
+Этапы по реакту
+---
+
+1. Создание приложения и запуск
+2. Компоненты и пропсы
+3. Компоненты и состояния
+4. Хуки или LifeCycle методы
+5. Redux - хранилищи данных
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
