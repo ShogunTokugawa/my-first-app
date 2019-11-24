@@ -8,7 +8,7 @@ import './style.scss';
 const data = {
     settings: {
         logo: "https://avatars.mds.yandex.net/get-pdb/2492799/0f89bde6-53f4-481f-be54-5d1c2de76aa2/s1200",
-        siteName: "my first app",
+        siteName: "My first app",
     },
     nav: [
         { title: 'Новости', link: '/news'},

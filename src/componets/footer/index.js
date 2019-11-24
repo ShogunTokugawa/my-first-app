@@ -4,7 +4,7 @@ import './style.scss';
 function Footer(props) {
     const currentYear = new Date();
     return(
-        <footer className="foo">
+        <footer className="footer">
             <h2>ето ебаный подвал</h2>
             <p>{`${props.copy} ${currentYear.getFullYear()} год`}</p>
         </footer>
