@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss'
 
 function Button(props) {
+
     return (
         <>
             {props.type === 'link' ? (
@@ -9,7 +10,11 @@ function Button(props) {
                     {props.children}
                 </a>
             ) : (
-                <button type={props.type} className={`button ${props.color}`}>
+                <button
+                    type={props.type}
+                    className={`button ${props.color}`}
+                    onClick={props.onPress}
+                >
                     {props.children}
                 </button>
             )}
