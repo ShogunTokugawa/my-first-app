@@ -1,12 +1,9 @@
 import React from 'react';
 import Header from "../header";
 import Nav from "../nav";
+import Content from "../content";
 import Footer from "../footer";
 import './style.scss';
-import '../footer/style.scss';
-import '../header/style.scss';
-import '../nav/style.scss';
-
 
 const data = {
     settings: {
@@ -30,6 +27,7 @@ function App() {
             siteName={data.settings.siteName}
         />
         <Nav nav={data.nav}/>
+        <Content/>
         <Footer copy={data.copy}/>
     </div>
   );
