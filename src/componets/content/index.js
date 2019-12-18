@@ -5,6 +5,9 @@ import Card from "../card";
 import './style.scss';
 import FlexBox from "../flexBox";
 import Toasts from "../toasts";
+import Input from "../input";
+import Rating from "../rating";
+
 
 function Content() {
 
@@ -71,6 +74,19 @@ function Content() {
             <Toasts header="Bootstrap" time="11 mins ago">
                 Hello, world! This is a toast message.
             </Toasts>
+            <br/>
+            <Input type="password" placeholder="Пароль" class="form-control">
+                index
+            </Input>
+            <br/>
+            <Rating
+                max="5"
+                now="2"
+                class="star-rating"
+                for="-star"
+            >
+                Рейтинг
+            </Rating>
         </div>
     )
 }
