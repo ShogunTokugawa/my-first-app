@@ -80,10 +80,8 @@ function Content() {
             </Input>
             <br/>
             <Rating
-                max="5"
-                now="2"
-                class="star-rating"
-                for="-star"
+                max={5}
+                now={2} 
             >
                 Рейтинг
             </Rating>
