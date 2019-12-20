@@ -7,11 +7,26 @@ import FlexBox from "../flexBox";
 import Toasts from "../toasts";
 import Input from "../input";
 import Rating from "../rating";
+import Tags from "../tags";
+import Breadcrumbs from "../breadcrumbs";
+import Pagination from "../pagination";
 
 
 function Content() {
 
     const [count, setCount] = useState(1);
+    const contentData = {
+        tags: [
+            { title: 'Тег №1', href: 'http://link1.ru'},
+            { title: 'Тег №2', href: 'http://link2.ru'},
+            { title: 'Тег №3', href: 'http://link3.ru'},        
+        ],
+        breadcrumbs:[
+            {title: 'Home', link: '/home'},
+            {title: 'Library', link: '/library'},
+            {title: 'Data', link: '/data'},
+        ],
+    };
 
     return(
         <div className="content">
@@ -85,6 +100,19 @@ function Content() {
             >
                 Рейтинг
             </Rating>
+            <Tags 
+                class="tag"
+                tag={contentData.tags}
+            >
+            </Tags>
+            <Breadcrumbs
+                breadcrumbs={contentData.breadcrumbs}
+            >
+            </Breadcrumbs>
+            <Pagination
+                countArticles={49}
+                limits={10}
+            ></Pagination>
         </div>
     )
 }
