@@ -10,8 +10,20 @@ nav {
         list-style: none;
         background-color: #e9ecef;
         border-radius: .25rem;
-        .breadcrumb-item.active {
-            color: #6c757d;
+        &__item {
+            &.active{
+                color: #6c757d;
+            }
+            &:after{
+                content: "/";
+                position: relative;
+                margin: 0 10px;
+            }
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
         }    
         a {
             color: #007bff;

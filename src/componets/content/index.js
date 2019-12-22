@@ -112,7 +112,8 @@ function Content() {
             <Pagination
                 countArticles={49}
                 limits={10}
-            ></Pagination>
+                currentPage={5}
+            />
         </div>
     )
 }
