@@ -1,0 +1,10 @@
+.slider{
+   img{
+      display: none;
+      width: 300px;
+      height: 200px;
+   }
+   img.active{
+      display: block;
+   }
+}

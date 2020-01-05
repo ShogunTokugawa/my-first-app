@@ -1,0 +1,25 @@
+.counter {
+   display: inline-block;
+   padding: 10px;
+   border: 2px solid white;
+   border-radius: 20px;
+   background-color: blue;
+   p {
+      display: inline;
+      color: white;
+      font-size: 30px;
+      padding: 5px;
+   }
+   button {
+      border: none;
+      background-color: initial;
+      font-size: 30px;
+      padding: 5px;
+   }
+}
+.hidden {
+   display: none;
+}
+.block {
+   display: block;
+}
