@@ -11,9 +11,9 @@ const data = {
         siteName: "My first app",
     },
     nav: [
-        { title: 'Новости', link: '/news'},
-        { title: 'Главная', link: '/main'},
-        { title: 'Статьи' , link: '/text'},
+        { title: 'Новости', link: '/news', active: false},
+        { title: 'Главная', link: '/main', active: false},
+        { title: 'Статьи' , link: '/text', active: false},
     ],
     copy: "@copyright все права защищены",
 };

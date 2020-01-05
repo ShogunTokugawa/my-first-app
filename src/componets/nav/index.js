@@ -7,7 +7,7 @@ function Nav(props) {
             <ul>
                 {props.nav && props.nav.map(item => (
                     <li key={item.title}>
-                        <a href={item.link}>{item.title}</a>
+                        <span data-href={item.link}>{item.title}</span>
                     </li>
                 ))}
             </ul>

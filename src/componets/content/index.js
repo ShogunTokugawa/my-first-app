@@ -10,7 +10,9 @@ import Rating from "../rating";
 import Tags from "../tags";
 import Breadcrumbs from "../breadcrumbs";
 import Pagination from "../pagination";
-
+import State from "../state";
+import Counter from "../counter";
+import Slider from "../slider";
 
 function Content() {
 
@@ -26,6 +28,13 @@ function Content() {
             {title: 'Library', link: '/library'},
             {title: 'Data', link: '/data'},
         ],
+    };
+    const sliderContent = {
+        content: [
+            { img: 'https://www.nastol.com.ua/download.php?img=201209/1600x1200/nastol.com.ua-32997.jpg', href: '/1' },
+            { img: 'https://www.zastavki.com/pictures/2560x1600/2010/Nature_Other_waterfall_019570_.jpg', href: '/2' },
+            { img: 'https://www.nastol.com.ua/download.php?img=201702/2560x1440/nastol.com.ua-207106.jpg', href: '/3' },
+        ]
     };
 
     return(
@@ -114,6 +123,16 @@ function Content() {
                 limits={10}
                 currentPage={5}
             />
+            <State/>
+            <br/>
+            <br/>
+            <Counter
+                number={5}
+            />
+            <Slider
+                content={sliderContent.content}
+            >
+            </Slider>
         </div>
     )
 }
