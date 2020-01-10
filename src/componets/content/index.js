@@ -13,6 +13,7 @@ import Pagination from "../pagination";
 import State from "../state";
 import Counter from "../counter";
 import Slider from "../slider";
+import Square from "../square";
 
 function Content() {
 
@@ -133,6 +134,9 @@ function Content() {
                 content={sliderContent.content}
             >
             </Slider>
+            <br/>
+            <br/>
+            <Square/>
         </div>
     )
 }
